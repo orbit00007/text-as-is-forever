@@ -6,22 +6,22 @@ import RobotIllustration from "@/components/RobotIllustration";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-6xl mx-auto px-8 py-4">
+      <div className="max-w-7xl mx-auto px-6 py-6">
         <Header />
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Left sidebar with profile */}
-          <div className="lg:col-span-1">
+        <div className="flex gap-8">
+          {/* Left sidebar with profile - fixed width */}
+          <div className="w-64 flex-shrink-0">
             <ProfileSection />
           </div>
           
-          {/* Main content */}
-          <div className="lg:col-span-1">
+          {/* Main content area - flexible width */}
+          <div className="flex-1 max-w-2xl">
             <MainContent />
           </div>
           
-          {/* Right sidebar with illustration */}
-          <div className="lg:col-span-1 flex justify-center items-start pt-16">
+          {/* Right sidebar with illustration - fixed width */}
+          <div className="w-80 flex-shrink-0 flex justify-center items-start pt-8">
             <RobotIllustration />
           </div>
         </div>
