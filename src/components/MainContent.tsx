@@ -5,28 +5,28 @@ const MainContent = () => {
       <div className="space-y-4">
         <h2 className="text-2xl font-bold flex items-center gap-2">
           <span>👋</span>
-          <span>Hello there, I'm Boris!</span>
+          <span>Hello there, I'm ORBiT!</span>
         </h2>
         
         <div className="space-y-3 text-foreground">
           <p className="flex items-start gap-2">
             <span>🎓</span>
-            <span>I'm a final year graduate student at the TU Berlin.</span>
+            <span>I'm a graduate student from GBPIET Pauri.</span>
           </p>
           
           <p className="flex items-start gap-2">
             <span>🔬</span>
-            <span>My research interests are in bridging vision and language modalities.</span>
+            <span>My research interests are in bridging machine learning and cybersecurity.</span>
           </p>
           
           <p className="flex items-start gap-2">
             <span>📚</span>
-            <span>I'm currently working towards my Master's Thesis in the field of Computer Vision and Natural Language Processing.</span>
+            <span>I'm currently working on projects related to MLOps and machine learning.</span>
           </p>
           
           <p className="flex items-start gap-2">
             <span>🤝</span>
-            <span>I am also interested in assisting others on their path in the world of Machine Learning and academia.</span>
+            <span>I am also interested in Full stack Development and Music.</span>
           </p>
         </div>
       </div>
