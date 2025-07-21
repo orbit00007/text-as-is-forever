@@ -1,4 +1,6 @@
-import { Mail, Twitter, Linkedin, Github, Youtube, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
+import { FaEnvelope, FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const ProfileSection = () => {
   return (
@@ -27,23 +29,23 @@ const ProfileSection = () => {
       
       <div className="space-y-2 text-sm">
         <div className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-          <Mail className="w-4 h-4" />
+          <FaEnvelope className="w-4 h-4" />
           <span>Email</span>
         </div>
         <div className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-          <Twitter className="w-4 h-4" />
-          <span>Twitter</span>
+          <FaXTwitter className="w-4 h-4" />
+          <span>X</span>
         </div>
         <div className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-          <Linkedin className="w-4 h-4" />
+          <FaLinkedin className="w-4 h-4" />
           <span>LinkedIn</span>
         </div>
         <div className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-          <Github className="w-4 h-4" />
+          <FaGithub className="w-4 h-4" />
           <span>Github</span>
         </div>
         <div className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-          <Youtube className="w-4 h-4" />
+          <FaYoutube className="w-4 h-4" />
           <span>YouTube</span>
         </div>
       </div>
