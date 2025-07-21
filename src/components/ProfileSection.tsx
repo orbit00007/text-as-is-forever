@@ -29,23 +29,23 @@ const ProfileSection = () => {
       
       <div className="space-y-2 text-sm">
         <div className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-          <FaEnvelope className="w-4 h-4" />
+          <FaEnvelope className="w-4 h-4 text-gray-600" />
           <span>Email</span>
         </div>
         <div className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-          <FaXTwitter className="w-4 h-4" />
+          <FaXTwitter className="w-4 h-4 text-black" />
           <span>X</span>
         </div>
         <div className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-          <FaLinkedin className="w-4 h-4" />
+          <FaLinkedin className="w-4 h-4" style={{color: '#0077B5'}} />
           <span>LinkedIn</span>
         </div>
         <div className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-          <FaGithub className="w-4 h-4" />
+          <FaGithub className="w-4 h-4 text-black" />
           <span>Github</span>
         </div>
         <div className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-          <FaYoutube className="w-4 h-4" />
+          <FaYoutube className="w-4 h-4" style={{color: '#FF0000'}} />
           <span>YouTube</span>
         </div>
       </div>
