@@ -5,87 +5,83 @@ const MainContent = () => {
       <div className="space-y-4">
         <h2 className="text-2xl font-bold flex items-center gap-2">
           <span>👋</span>
-          <span>Hello there, I'm Gaurav Bhatt!</span>
+          <span>Hello there, I'm ORBiT!</span>
         </h2>
         
         <div className="space-y-3 text-foreground">
           <p className="flex items-start gap-2">
             <span>🎓</span>
-            <span>Computer Science graduate from GB Pant Institute of Engineering and Technology.</span>
+            <span>I'm a graduate student from GBPIET Pauri.</span>
           </p>
           
           <p className="flex items-start gap-2">
             <span>🔬</span>
-            <span>My research interests are in bridging machine learning and cybersecurity with expertise in adversarial robustness evaluation.</span>
+            <span>My research interests are in bridging machine learning and cybersecurity.</span>
           </p>
           
           <p className="flex items-start gap-2">
             <span>📚</span>
-            <span>Currently developing automation workflows and reproducible pipelines using MLOps tools like DVC and MLflow.</span>
+            <span>I'm currently working on projects related to MLOps and machine learning.</span>
           </p>
           
           <p className="flex items-start gap-2">
-            <span>🛠️</span>
-            <span>Experienced in backend development for scalable systems, secure API integration, and full-stack development.</span>
-          </p>
-          
-          <p className="flex items-start gap-2">
-            <span>🎯</span>
-            <span>Keen interest in system reliability, functional programming, and cybersecurity threat detection.</span>
+            <span>🤝</span>
+            <span>I am also interested in Full stack Development and Music.</span>
           </p>
         </div>
       </div>
 
       {/* Selected Experience Section */}
       <div className="space-y-6">
-        <h2 className="text-xl font-bold">Recent Highlights</h2>
+        <h2 className="text-xl font-bold">Selected Experience</h2>
         
-        {/* Research Work */}
+        {/* Open Source Contributions */}
         <div className="space-y-3">
           <h3 className="text-lg font-semibold flex items-center gap-2">
-            <span>🔬</span>
-            <span>Research & Publications</span>
+            <span>👑</span>
+            <span>Open Source Contributions</span>
           </h3>
           
           <div className="space-y-3 text-foreground">
             <p>
-              Currently working on the{" "}
-              <span className="font-semibold text-primary">Combined Adversarial Attack (CoAA)</span>{" "}
-              framework under 2nd review at IJMLC, Springer 2025.
+              I have experience contributing to{" "}
+              <a href="#" className="text-link-blue hover:underline">Arena Bench</a>{" "}
+              a large open-source project for robotic obstacle avoidance using Deep Reinforcement Learning.
             </p>
             
             <p>
-              The research combines FGSM, PGD, HSJA, CW, and ZOO attacks to evaluate deep learning vulnerabilities with a unique evaluation pipeline.
+              Moreover, I have published a{" "}
+              <a href="#" className="text-link-blue hover:underline">respective paper</a>{" "}
+              at the IROS conference and in the Robotics and Automation Letters (RA-L) journal.
             </p>
             
             <p className="flex items-start gap-2">
-              <span>🏆</span>
-              <span>Presented research at the 11th International Polish Scientific Conference in Turkey (June 2025).</span>
+              <span>📝</span>
+              <span>Recently, I have submitted a second one.</span>
             </p>
           </div>
         </div>
 
-        {/* Recent Achievements */}
+        {/* Reimplementing and Reproducing Papers */}
         <div className="space-y-3">
           <h3 className="text-lg font-semibold flex items-center gap-2">
-            <span>🏆</span>
-            <span>Recent Achievements</span>
+            <span>📊</span>
+            <span>Reimplementing and Reproducing Papers</span>
           </h3>
           
           <div className="space-y-3 text-foreground">
             <p>
-              <span className="font-semibold text-primary">2nd Place at Cognizance 2024 (IIT Roorkee)</span> - 
-              Cybersecurity Hackathon for developing a Cybersecurity Threat AI prototype using LLMs and GNNs.
+              I have experience with independent research. I have implemented the Reward Constrained Policy Optimization paper into stable-baselines3 PPO and reproduced the original results by running and tracking experiments.
             </p>
             
             <p>
-              <span className="font-semibold text-primary">Winner at Thomso 2024 (IIT Roorkee)</span> - 
-              Beatboxing Competition, showcasing diverse talents beyond technical skills.
+              To accompany this work, I have submitted a blog post to the{" "}
+              <span className="font-semibold">ICLR</span> Blogposts Track communicating the paper's theory and my results.
             </p>
             
             <p>
-              Solved <span className="font-semibold">150+ problems on LeetCode</span>, demonstrating strong 
-              problem-solving abilities and algorithmic thinking.
+              Feel free to look at my specific{" "}
+              <a href="#" className="text-link-blue hover:underline">portfolio entry</a>.
             </p>
           </div>
         </div>

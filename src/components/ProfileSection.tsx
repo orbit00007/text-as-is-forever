@@ -21,16 +21,12 @@ const ProfileSection = () => {
       <div className="space-y-1 text-sm text-muted-foreground mb-4">
         <div className="flex items-center gap-2">
           <MapPin className="w-4 h-4" />
-          <span>Timarpur, Delhi</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <span>📞</span>
-          <span>+91-9625442127</span>
+          <span>Delhi, India</span>
         </div>
         <div className="flex items-center gap-2">
           <span>🏢</span>
           <span>
-            GB Pant Institute of Engineering and Technology
+            Govind Ballabh Pant Institute of Engineering and Techonolgy
           </span>
         </div>
       </div>
