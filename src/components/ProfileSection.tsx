@@ -1,7 +1,6 @@
 import { MapPin } from "lucide-react";
-import { FaEnvelope, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { SiLeetcode } from "react-icons/si";
 
 const ProfileSection = () => {
   return (
@@ -48,35 +47,16 @@ const ProfileSection = () => {
           <FaXTwitter className="w-4 h-4 text-black" />
           <span>X</span>
         </a>
-        <a 
-          href="https://www.linkedin.com/in/gaurav-bhatt-293596224/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
-        >
+        <a className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
           <FaLinkedin className="w-4 h-4" style={{ color: "#0077B5" }} />
           <span>LinkedIn</span>
         </a>
-        <a 
-          href="https://github.com/gbhatt7"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
-        >
+        <a className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
           <FaGithub className="w-4 h-4 text-black" />
           <span>Github</span>
         </a>
-        <a 
-          href="https://leetcode.com/u/gbhatt7/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
-        >
-          <SiLeetcode className="w-4 h-4" style={{ color: "#FFA116" }} />
-          <span>LeetCode</span>
-        </a>
         <a className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-          <FaInstagram className="w-4 h-4" style={{ color: "#E4405F" }} />
+          <FaYoutube className="w-4 h-4" style={{ color: "#FF0000" }} />
           <span>Instagram</span>
         </a>
       </div>
