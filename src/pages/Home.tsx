@@ -1,45 +1,105 @@
-import Header from "@/components/Header";
-import ProfileSection from "@/components/ProfileSection";
-import RobotIllustration from "@/components/RobotIllustration";
-
 const Home = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-7xl mx-auto px-6 py-6">
-        <Header />
+    <div className="space-y-8">
+      {/* Hero Section */}
+      <div className="space-y-4">
+        <h1 className="text-3xl font-bold text-foreground">
+          Welcome to my Academic Portfolio
+        </h1>
+        <p className="text-lg text-muted-foreground">
+          Computer Science graduate with expertise in Machine Learning, Full Stack Development, and MLOps
+        </p>
+      </div>
+
+      {/* About Section */}
+      <div className="space-y-6">
+        <h2 className="text-2xl font-semibold text-foreground border-b border-border pb-2">
+          About Me
+        </h2>
         
-        <div className="flex gap-8">
-          {/* Left sidebar with profile */}
-          <div className="w-64 flex-shrink-0">
-            <ProfileSection />
+        <div className="prose max-w-none">
+          <p className="text-foreground leading-relaxed mb-4">
+            I am a Computer Science graduate from GB Pant Institute of Engineering and Technology 
+            with expertise in backend development for scalable systems, secure API integration, and 
+            adversarial robustness evaluation. I am knowledgeable about MLOps tools like DVC and MLflow, 
+            as well as Python, PHP, Docker, and Git.
+          </p>
+          
+          <p className="text-foreground leading-relaxed mb-4">
+            Currently, I am developing automation workflows and reproducible pipelines, with a keen 
+            interest in system reliability and functional programming. My research focuses on bridging 
+            machine learning and cybersecurity, particularly in adversarial robustness evaluation.
+          </p>
+          
+          <p className="text-foreground leading-relaxed">
+            I have practical experience in full-stack development, AI chatbot implementation, and 
+            cybersecurity threat detection. My work has been recognized at prestigious competitions 
+            including IIT Roorkee's Cognizance and Thomso events.
+          </p>
+        </div>
+      </div>
+
+      {/* Research Interests */}
+      <div className="space-y-6">
+        <h2 className="text-2xl font-semibold text-foreground border-b border-border pb-2">
+          Research Interests
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="space-y-3">
+            <h3 className="text-lg font-medium text-foreground">Machine Learning & AI</h3>
+            <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+              <li>Adversarial Machine Learning</li>
+              <li>Deep Learning Robustness</li>
+              <li>Neural Network Security</li>
+              <li>MLOps and Automation</li>
+            </ul>
           </div>
           
-          {/* Main content area */}
-          <div className="flex-1 max-w-2xl">
-            <div className="bg-card rounded-2xl p-8 shadow-sm border">
-              <h2 className="text-2xl font-bold mb-6 text-center">Welcome to My Portfolio</h2>
-              <div className="prose prose-sm text-muted-foreground">
-                <p className="mb-4">
-                  Hi! I'm Gaurav Bhatt, a Computer Science graduate with expertise in backend development, 
-                  machine learning, and MLOps. I'm passionate about building scalable systems and exploring 
-                  the intersection of AI and software engineering.
-                </p>
-                <p className="mb-4">
-                  Currently, I'm working on automation workflows and reproducible pipelines, with a keen 
-                  interest in system reliability and functional programming. I have experience with various 
-                  technologies including Python, JavaScript, Docker, and modern ML frameworks.
-                </p>
-                <p>
-                  Feel free to explore my skills, experience, education, projects, and research using the 
-                  navigation above. You can also connect with me through the social links on the left.
-                </p>
-              </div>
-            </div>
+          <div className="space-y-3">
+            <h3 className="text-lg font-medium text-foreground">Cybersecurity</h3>
+            <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+              <li>Threat Detection Systems</li>
+              <li>Adversarial Attack Frameworks</li>
+              <li>Security in AI Systems</li>
+              <li>Network Anomaly Detection</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Recent Highlights */}
+      <div className="space-y-6">
+        <h2 className="text-2xl font-semibold text-foreground border-b border-border pb-2">
+          Recent Highlights
+        </h2>
+        
+        <div className="space-y-4">
+          <div className="bg-muted/50 rounded-lg p-4">
+            <h3 className="font-medium text-foreground mb-2">
+              🏆 2nd Place - Cognizance 2024 (IIT Roorkee)
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              Cybersecurity Hackathon for developing a Cybersecurity Threat AI prototype using LLMs and GNNs
+            </p>
           </div>
           
-          {/* Right sidebar with illustration */}
-          <div className="w-80 flex-shrink-0 flex justify-center items-start pt-8">
-            <RobotIllustration />
+          <div className="bg-muted/50 rounded-lg p-4">
+            <h3 className="font-medium text-foreground mb-2">
+              📝 Combined Adversarial Attack (CoAA) Framework
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              Under 2nd review at IJMLC, Springer 2025 - Research combining FGSM, PGD, HSJA, CW, and ZOO attacks
+            </p>
+          </div>
+          
+          <div className="bg-muted/50 rounded-lg p-4">
+            <h3 className="font-medium text-foreground mb-2">
+              🎤 Winner - Thomso 2024 (IIT Roorkee)
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              Beatboxing Competition, showcasing diverse talents beyond technical skills
+            </p>
           </div>
         </div>
       </div>
