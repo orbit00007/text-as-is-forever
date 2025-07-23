@@ -1,14 +1,14 @@
-import { MapPin, Mail, ExternalLink } from "lucide-react";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { MapPin, Mail } from "lucide-react";
+import { FaLinkedin, FaGithub, FaInstagram, FaOrcid } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { SiLeetcode } from "react-icons/si";
+import { SiLeetcode, SiGooglescholar } from "react-icons/si";
 
 const Sidebar = () => {
   return (
-    <div className="bg-card rounded-lg p-6 shadow-sm border">
+    <div className="p-8 pt-12">
       {/* Profile Image */}
       <div className="flex justify-center mb-6">
-        <div className="w-48 h-48 rounded-full overflow-hidden bg-muted">
+        <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
           <img
             src="/orbitimage.jpg"
             alt="Gaurav Bhatt"
@@ -17,98 +17,101 @@ const Sidebar = () => {
         </div>
       </div>
 
-      {/* Name and Title */}
-      <div className="text-center mb-6">
-        <h1 className="text-2xl font-bold text-foreground mb-2">Gaurav Bhatt</h1>
-        <p className="text-muted-foreground">
-          Computer Science Graduate
-        </p>
-      </div>
-
-      {/* Bio */}
-      <div className="mb-6 text-sm text-muted-foreground">
-        <p>
-          Machine Learning | Full Stack | MLOps specialist with expertise in 
-          adversarial robustness evaluation and scalable system development.
+      {/* Name and Bio */}
+      <div className="text-center mb-8">
+        <h2 className="text-xl font-semibold text-gray-900 mb-3">Gaurav Bhatt</h2>
+        <p className="text-sm text-gray-600 leading-relaxed">
+          Computer Science graduate with expertise in machine learning, cybersecurity, 
+          and full-stack development. Passionate about adversarial robustness evaluation 
+          and MLOps automation.
         </p>
       </div>
 
       {/* Contact Info */}
-      <div className="space-y-3 mb-6">
-        <div className="flex items-center gap-3 text-sm">
-          <MapPin className="w-4 h-4 text-muted-foreground" />
+      <div className="space-y-3 mb-8">
+        <div className="flex items-center gap-3 text-sm text-gray-700">
+          <MapPin className="w-4 h-4 text-gray-500" />
           <span>Timarpur, Delhi</span>
         </div>
         
-        <div className="flex items-center gap-3 text-sm">
-          <span className="text-muted-foreground">🏢</span>
+        <div className="flex items-center gap-3 text-sm text-gray-700">
+          <span className="text-gray-500">🏢</span>
           <span>GB Pant Institute of Engineering and Technology</span>
         </div>
         
         <div className="flex items-center gap-3 text-sm">
-          <Mail className="w-4 h-4 text-muted-foreground" />
+          <Mail className="w-4 h-4 text-gray-500" />
           <a 
             href="mailto:gbhattbvb7@gmail.com"
-            className="text-primary hover:underline"
+            className="text-blue-600 hover:text-blue-800 hover:underline"
           >
-            gbhattbvb7@gmail.com
+            Email
           </a>
         </div>
       </div>
 
       {/* Social Links */}
-      <div className="space-y-3">
-        <h3 className="text-sm font-semibold text-foreground mb-3">Connect</h3>
-        
+      <div className="space-y-2">
         <a
           href="https://www.linkedin.com/in/gaurav-bhatt-293596224/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          className="flex items-center gap-3 text-sm text-blue-600 hover:text-blue-800 hover:underline"
         >
-          <FaLinkedin className="w-4 h-4" style={{ color: "#0077B5" }} />
+          <FaLinkedin className="w-4 h-4" />
           <span>LinkedIn</span>
-          <ExternalLink className="w-3 h-3 ml-auto" />
         </a>
         
         <a
           href="https://github.com/gbhatt7"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          className="flex items-center gap-3 text-sm text-blue-600 hover:text-blue-800 hover:underline"
         >
           <FaGithub className="w-4 h-4" />
           <span>GitHub</span>
-          <ExternalLink className="w-3 h-3 ml-auto" />
         </a>
         
         <a
           href="https://leetcode.com/u/gbhatt7/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          className="flex items-center gap-3 text-sm text-blue-600 hover:text-blue-800 hover:underline"
         >
-          <SiLeetcode className="w-4 h-4" style={{ color: "#FFA116" }} />
+          <SiLeetcode className="w-4 h-4" />
           <span>LeetCode</span>
-          <ExternalLink className="w-3 h-3 ml-auto" />
         </a>
         
         <a
           href="#"
-          className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          className="flex items-center gap-3 text-sm text-blue-600 hover:text-blue-800 hover:underline"
+        >
+          <SiGooglescholar className="w-4 h-4" />
+          <span>Google Scholar</span>
+        </a>
+        
+        <a
+          href="#"
+          className="flex items-center gap-3 text-sm text-blue-600 hover:text-blue-800 hover:underline"
+        >
+          <FaOrcid className="w-4 h-4" />
+          <span>ORCID</span>
+        </a>
+        
+        <a
+          href="#"
+          className="flex items-center gap-3 text-sm text-blue-600 hover:text-blue-800 hover:underline"
         >
           <FaXTwitter className="w-4 h-4" />
-          <span>X (Twitter)</span>
-          <ExternalLink className="w-3 h-3 ml-auto" />
+          <span>X</span>
         </a>
         
         <a
           href="#"
-          className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          className="flex items-center gap-3 text-sm text-blue-600 hover:text-blue-800 hover:underline"
         >
-          <FaInstagram className="w-4 h-4" style={{ color: "#E4405F" }} />
+          <FaInstagram className="w-4 h-4" />
           <span>Instagram</span>
-          <ExternalLink className="w-3 h-3 ml-auto" />
         </a>
       </div>
     </div>

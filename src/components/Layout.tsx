@@ -8,18 +8,18 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white">
       <Header />
-      <div className="max-w-7xl mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* Sidebar */}
-          <div className="lg:col-span-1">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex">
+          {/* Sidebar - Fixed width */}
+          <div className="w-80 min-h-screen border-r border-gray-200 bg-gray-50/30">
             <Sidebar />
           </div>
           
           {/* Main Content */}
-          <div className="lg:col-span-3">
-            <div className="bg-card rounded-lg p-8 shadow-sm border">
+          <div className="flex-1 p-8">
+            <div className="max-w-4xl">
               {children}
             </div>
           </div>
